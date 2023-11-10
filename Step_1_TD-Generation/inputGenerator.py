@@ -8,11 +8,15 @@ import os
 import shortuuid
 
 
-def fuzzer(low, high, input_type):
-
+# def fuzzer(low, high, input_type):
+def fuzzer(input_type):
+    
+    low = np.random.uniform(low=-35, high=-15, size=1).astype(int)
+    high = np.random.uniform(low=15, high=35, size=1).astype(int)
+    print(low,high)
     if input_type == 'int':
         size = np.random.uniform(low=0, high=15, size=1).astype(int)
-        a = np.random.randint(low,high,size).tolist()
+        a = np.random.randint(low[0],high[0],size).tolist()
         return a
     
     if input_type == 'float':
@@ -42,14 +46,15 @@ if __name__ == '__main__':
     auxList = []
 
     @click.command()
-    @click.option('-l', '--low', 'low')
-    @click.option('-h', '--high', 'high')
+    # @click.option('-l', '--low', 'low')
+    # @click.option('-h', '--high', 'high')
     @click.option('-it', '--input_type', 'input_type')
     @click.option('-t', '--t_end', 't_end')
     @click.option('-o', '--output', 'output', help = 'Output file name')
 
-    def main(low, high, input_type, t_end, output):
-        
+    # def main(low, high, input_type, t_end, output):
+    def main(input_type, t_end, output):
+    
         mainPath = str(pathlib.Path().absolute()) + '/' + 'inputs'
         print(mainPath)
 
@@ -61,7 +66,9 @@ if __name__ == '__main__':
         t_end = time.time() + float(t_end)
         index = 0
         while time.time() < t_end:
-            newInput = fuzzer(int(low),int(high), input_type)
+            # newInput = fuzzer(int(low),int(high), input_type)
+            newInput = fuzzer(input_type)
+
             if len(newInput) != 0:
                 valute_type = type(newInput[0])
             else:
