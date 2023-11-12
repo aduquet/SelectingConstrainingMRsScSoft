@@ -17,9 +17,11 @@ class MR_PER():
         self.test_data_one_input = test_data_one_input
     
     def followUpTD(self):
+        
+        all_equal = len(set(self.test_data_one_input)) == 1
                 
         aux_list = self.test_data_one_input.copy()
-        if len(self.test_data_one_input) != 0 and type(self.test_data_one_input) == list:
+        if all_equal != 1 and len(self.test_data_one_input) != 0 and type(self.test_data_one_input) == list:
             while self.test_data_one_input == aux_list:
                 random.shuffle(aux_list)
             return aux_list
@@ -50,7 +52,7 @@ class MR_PER():
             'ttd': self.ttd,
             'td_output': self.td_output,
             'ttd_output': self.ttd_output,
-            'vs_string': self.vs_string,
+            'vs_str': self.vs_string,
             'vs': self.vs,
         }
         

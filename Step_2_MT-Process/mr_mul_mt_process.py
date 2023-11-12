@@ -49,7 +49,7 @@ class MR_MUL():
             'ttd': self.ttd,
             'td_output': self.td_output,
             'ttd_output': self.ttd_output,
-            'vs_string': self.vs_string,
+            'vs_str': self.vs_string,
             'vs': self.vs,
         }
         
