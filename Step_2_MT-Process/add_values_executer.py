@@ -1,5 +1,5 @@
-from adapter.adapter_inputs import AdapterInputs
-from adapter.adapter_mr_checker import AdapterMRchecker
+from adapters.adapter_inputs import AdapterInputs
+from adapters.adapter_mr_checker import AdapterMRchecker
 from pathlib import Path
 import pandas as pd
 import traceback
