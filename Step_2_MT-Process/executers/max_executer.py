@@ -33,42 +33,42 @@ def _get_outputs(all_inputs):
     inputs_outputs = all_inputs.copy()
     try:
         inputs_outputs['td_output'] = max(all_inputs['td'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['td_output'] = 'error'
     try:
         inputs_outputs['ttd_output_mr_per'] = max(all_inputs['ttd_mr_per'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_per'] = 'error'
         
     try:
         inputs_outputs['ttd_output_mr_add'] = max(all_inputs['ttd_mr_add'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_add'] = 'error'
     
     try:
         inputs_outputs['ttd_output_mr_mul'] = max(all_inputs['ttd_mr_mul'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_mul'] = 'error'
     
     try:
         inputs_outputs['ttd_output_mr_inv'] = max(all_inputs['ttd_mr_inv'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_inv'] = 'error'
     
     try:
         inputs_outputs['ttd_output_mr_inc'] = max(all_inputs['ttd_mr_inc'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_inc'] = 'error'
     
     try:
         inputs_outputs['ttd_output_mr_exc'] = max(all_inputs['ttd_mr_exc'])
-    except TypeError:
+    except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_exc'] = 'error'   
         
