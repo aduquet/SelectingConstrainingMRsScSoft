@@ -1,7 +1,10 @@
-import random
 import math
 
 class MR_MUL():
+    """ MR MUL 
+    Change in the input -> Multiply by a possitive constant
+    Expected change in the output -> Increase or remain constant
+    """
     
     ttd = None
     vs = None
@@ -13,10 +16,10 @@ class MR_MUL():
         self.test_data_one_input = test_data_one_input
         self.cons = cons
     
-    # MR_ADD -> Add a positive constant
     def followUpTD(self):
         aux_list = []
         
+        # MR_MUL -> Multiply by a positive constant
         if len(self.test_data_one_input) != 0 and type(self.test_data_one_input) == list:    
             for item in self.test_data_one_input:
                 aux_list.append(item * self.cons)
@@ -32,13 +35,10 @@ class MR_MUL():
         if math.isclose(outputTD, outputTTD, rel_tol=1e-9, abs_tol=0) or outputTD < outputTTD:
             self.vs = 0
             self.vs_string = 'No-violate'
-            # return 0, 'No-violated'
         
-        # if math.isclose(self.inputA,self.inputB, rel_tol=1e-9, abs_tol=0) and self.inputA < self.inputB:
         else:
             self.vs = 1
             self.vs_string = 'Violate'
-            # return 1, 'Violated'
             
         return self.mrCheckerResult()
     

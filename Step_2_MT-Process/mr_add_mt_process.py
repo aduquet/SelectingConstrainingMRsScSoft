@@ -1,8 +1,10 @@
-import random
 import math
 
 class MR_ADD():
-    
+    """ MR ADD 
+    Change in the input -> Add a possitive constant
+    Expected change in the output -> Increase or remain constant
+    """
     ttd = None
     vs = None
     vs_string = None
@@ -32,13 +34,10 @@ class MR_ADD():
         if math.isclose(outputTD, outputTTD, rel_tol=1e-9, abs_tol=0) or outputTD < outputTTD:
             self.vs = 0
             self.vs_string = 'No-violate'
-            # return 0, 'No-violated'
         
-        # if math.isclose(self.inputA,self.inputB, rel_tol=1e-9, abs_tol=0) and self.inputA < self.inputB:
         else:
             self.vs = 1
             self.vs_string = 'Violate'
-            # return 1, 'Violated'
             
         return self.mrCheckerResult()
     
@@ -49,7 +48,7 @@ class MR_ADD():
             'ttd': self.ttd,
             'td_output': self.td_output,
             'ttd_output': self.ttd_output,
-            'vs_string': self.vs_string,
+            'vs_str': self.vs_string,
             'vs': self.vs,
         }
         
