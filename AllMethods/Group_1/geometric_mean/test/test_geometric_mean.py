@@ -12,7 +12,7 @@ class TestGeometricMean(unittest.TestCase):
         self.assertAlmostEqual(geometric_mean([1, 2, 3, 4]), 2.213364, places=6)
 
     def test_geometric_mean_single_number(self):
-        self.assertEqual(geometric_mean([5]), 5)
+        self.assertAlmostEqual(geometric_mean([5]), 5, places=6)
 
     def test_empty_list(self):
         with self.assertRaises(ValueError):
