@@ -1,13 +1,8 @@
 from adapter.adapter_inputs import AdapterInputs
-from mr_add_mt_process import MR_ADD
-from mr_exc_mt_process import MR_EXC
-from mr_inc_mt_process import MR_INC
-from mr_inv_mt_process import MR_INV
-from mr_mul_mt_process import MR_MUL
-from mr_per_mt_process import MR_PER
-
-import pandas as pd
+from adapter.adapter_mr_checker import AdapterMRchecker
 from pathlib import Path
+import pandas as pd
+import traceback
 import pathlib
 import json
 import sys
@@ -29,64 +24,106 @@ def _get_ttd(input):
     
     return AdapterInputs(input).ttd_all_mrs(2)
 
-def _get_td_output(td):    
-    return add_values(td)
-
-def _get_ttd_output(ttd):
-    return add_values(ttd)
-
-td_ttd = _get_ttd([1, 0])
-
-print(_get_ttd([1, 0]))
-# if __name__ == '__main__':
+def _get_outputs(all_inputs):
+    error_message = None
     
-#     import click
+    inputs_outputs = all_inputs.copy()
+    try:
+        inputs_outputs['td_output'] = add_values(all_inputs['td'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['td_output'] = 'error'
+    try:
+        inputs_outputs['ttd_output_mr_per'] = add_values(all_inputs['ttd_mr_per'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['ttd_output_mr_per'] = 'error'
+        
+    try:
+        inputs_outputs['ttd_output_mr_add'] = add_values(all_inputs['ttd_mr_add'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['ttd_output_mr_add'] = 'error'
     
-#     global mainDF
-#     mainDF = pd.DataFrame()
+    try:
+        inputs_outputs['ttd_output_mr_mul'] = add_values(all_inputs['ttd_mr_mul'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['ttd_output_mr_mul'] = 'error'
     
-#     global auxList
-#     auxList = []
+    try:
+        inputs_outputs['ttd_output_mr_inv'] = add_values(all_inputs['ttd_mr_inv'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['ttd_output_mr_inv'] = 'error'
     
-#     @click.command()
-#     @click.option('-i', '--input_path', 'input_path')
-#     @click.option('-o', '--output_file', 'output_file')
+    try:
+        inputs_outputs['ttd_output_mr_inc'] = add_values(all_inputs['ttd_mr_inc'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['ttd_output_mr_inc'] = 'error'
+    
+    try:
+        inputs_outputs['ttd_output_mr_exc'] = add_values(all_inputs['ttd_mr_exc'])
+    except TypeError:
+        error_message = traceback.format_exc()
+        inputs_outputs['ttd_output_mr_exc'] = 'error'   
+        
+    return inputs_outputs
 
-#     def main(input_path, output_file):
-        
-#         mainPathMRChecker = str(pathlib.Path().absolute()) + '/' + 'Logs'
+def mr_checker(inputs_outputs):
+    
+    return AdapterMRchecker(inputs_outputs,2).all_mrs_checker()
 
-#         try:
-#             os.mkdir(mainPathMRChecker)
-#         except:
-#             pass
-        
-#         with open(input_path, 'r') as readfiles:
-#             inputs = json.load(readfiles)
-#             json.dumps(inputs, indent=4)
-            
-#         for i in range(0, len(inputs)):
+def save_json(df, output, savePath):
+    df.to_json(savePath + '/' + output + '.json', indent= 4, orient="index")
+    print('*** Done ***')
+    print('Saved in: ', savePath + '/' + output + '.json')
 
-#             output = add_values(inputs[str(i)]['test_data'])
-#             output_transformed = testDataTransformedExecution(inputs[str(i)]['MR2-ADD'])
-#             mr = MTexecuterMRADD(output)
-#             violationStatus = mr.mr_ADD(output_transformed)
-            
-#         #     mainDF = {
-#         #         'id': inputs[str(i)]['id'],
-#         #         'test_data': inputs[str(i)]['test_data'],
-#         #         'test_data_transformed': inputs[str(i)]['MR2-ADD'],
-#         #         'output': output,
-#         #         'output_transformed': output_transformed,
-#         #         'MR_Status': violationStatus
-#         #     }
-            
-#         #     auxList.append(mainDF)
-            
-#         # final_df = pd.DataFrame(auxList)
+def save_csv(df, output, savePath):
+    df.to_csv(savePath + '/' + output + '.csv')
+    print('Saved in: ', savePath + '/' + output + '.csv')
+    print('*****')
+
+if __name__ == '__main__':
+    
+    import click
+    
+    global mainDF
+    mainDF = pd.DataFrame()
+    
+    global auxList
+    auxList = []
+    
+    @click.command()
+    @click.option('-i', '--input_path', 'input_path')
+    @click.option('-o', '--output_file', 'output_file')
+
+    def main(input_path, output_file):
         
-#         # save_csv(final_df, output_file, mainPathMRChecker)
-#         # save_json(final_df, output_file, mainPathMRChecker)
+        mainPathMRChecker = str(pathlib.Path().absolute()) + '/' + 'Logs'
+
+        try:
+            os.mkdir(mainPathMRChecker)
+        except:
+            pass
         
-# main()
+        with open(input_path, 'r') as readfiles:
+            inputs = json.load(readfiles)
+            json.dumps(inputs, indent=4)
+            
+        for i in range(0, len(inputs)):
+            test_data = inputs[str(i)]['test_data']            
+            td_ttd = _get_ttd(test_data)
+            input_outputs = _get_outputs(td_ttd)
+            checkers = mr_checker(input_outputs)
+            
+            auxList.append(checkers)
+
+        final_df = pd.DataFrame(auxList)
+        
+        save_csv(final_df, output_file, mainPathMRChecker)
+        save_json(final_df, output_file, mainPathMRChecker)
+        
+main()
     
