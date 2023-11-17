@@ -10,6 +10,9 @@ class ListDescripter():
 
     def has_zero(self):
         return 0 in self.data_list
+    
+    def cnt_zeros(self):
+        return sum(1 for num in self.data_list if num == 0)
 
     def cnt_positive_numbers(self):
         return sum(1 for num in self.data_list if num > 0)
@@ -55,7 +58,6 @@ class ListDescripter():
     
     def pp_numbers(self):
         return sum(num for num in self.data_list if num > 0) / len(self.data_list)
-
 
     def pn_numbers(self):
         return sum(num for num in self.data_list if num < 0) / len(self.data_list)
