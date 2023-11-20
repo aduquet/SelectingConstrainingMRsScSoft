@@ -1,3 +1,6 @@
 # Ignore all __pycache__ files
 __pycache__/
 AllMethods/Group_1/add_values/src/__pycache__/
+
+# Ignore Mac OS system files (.DS_Store)
+**/.DS_Store
