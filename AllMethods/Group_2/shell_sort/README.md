@@ -1,40 +1,45 @@
-## set_min_val Function
 
-### Overview
-The `set_min_val` function modifies each element in a given list to ensure no element is smaller than a specified minimum value.
+### README for `shell_sort` Function
 
-### Requirements
-- Python 3.x
+#### Overview
 
-### Parameters
-- `a` (list): A list of numbers to be modified.
-- `k` (number): The minimum value to be set for each element in the list.
+The `shell_sort` function implements the Shell sort algorithm, an in-place comparison sort. It is a generalization of insertion sort that allows the exchange of items that are far apart. The function takes an array and sorts it in ascending order.
 
-### Returns
-- The modified list where all elements are at least `k`.
+#### Function Signature
 
-### Functionality
-- Iterates through each element of the list.
-- If an element is found to be less than `k`, it is replaced with `k`.
-- The function modifies the list in place and returns the updated list.
-
-### Example Usage
 ```python
-data = [1, 4, 2, 6, 3]
-min_value = 3
-result = set_min_val(data, min_value)
-print(result)  # Output: [3, 4, 3, 6, 3]
+def shell_sort(arr):
+    # function implementation
 ```
 
-### Error Handling
-- The function handles empty lists by returning them unchanged.
-- If all elements are already greater than or equal to `k`, the list is returned unchanged.
+#### Parameters
 
-### Test Suite
-- Includes tests for lists with elements below `k`, an empty list, and a list where all elements are already above `k`.
-- Ensures the function correctly modifies the list as required.
+- `arr` (list): The list of numerical values to be sorted.
 
-### Running Tests
-- Utilize Python's `unittest` framework.
-- Combine the function and test suite into a single script for testing.
-- Execute the script to run tests and display results.
+#### Returns
+
+- `list`: The sorted list.
+
+#### Process
+
+1. Initializes a `gap` variable, starting at half the length of the array.
+2. Performs a gap-based insertion sort.
+3. Gradually reduces the gap and repeats the process until the gap is 0.
+4. Returns the sorted array.
+
+#### Test Suite
+
+A test suite is provided to verify the sorting correctness for various cases, including regular lists, empty lists, and single-element lists.
+
+#### Notes
+
+- The Shell sort algorithm is more efficient than a simple insertion sort, particularly for larger arrays.
+- This function modifies the input array in place.
+
+#### Example Usage
+
+```python
+sorted_array = shell_sort([64, 34, 25, 12, 22, 11, 90])
+```
+
+This example demonstrates sorting an array using the Shell sort algorithm.

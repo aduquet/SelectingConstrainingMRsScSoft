@@ -1,14 +1,23 @@
 import unittest
+import os
+import sys
 
-class TestSetMinVal(unittest.TestCase):
-    def test_set_min_val(self):
-        self.assertEqual(set_min_val([1, 4, 2, 6, 3], 3), [3, 4, 3, 6, 3])
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+from src.shell_sort import shell_sort
 
-    def test_empty_list(self):
-        self.assertEqual(set_min_val([], 3), [])
+import unittest
 
-    def test_all_above_k(self):
-        self.assertEqual(set_min_val([4, 5, 6], 3), [4, 5, 6])
+class TestShellSort(unittest.TestCase):
 
-if __name__ == "__main__":
+    def test_shell_sort(self):
+        self.assertEqual(shell_sort([64, 34, 25, 12, 22, 11, 90]), [11, 12, 22, 25, 34, 64, 90])
+
+    def test_empty_array(self):
+        self.assertEqual(shell_sort([]), [])
+
+    def test_single_element_array(self):
+        self.assertEqual(shell_sort([1]), [1])
+
+if __name__ == '__main__':
     unittest.main()

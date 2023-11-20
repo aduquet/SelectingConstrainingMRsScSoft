@@ -1,4 +1,10 @@
 import unittest
+import os
+import sys
+
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+from src.absoluteDifferences import absoluteDifferences
 
 class TestCalculateAbsoluteDifferences(unittest.TestCase):
     def test_mixed_values(self):

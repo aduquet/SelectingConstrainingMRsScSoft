@@ -1,4 +1,10 @@
 import unittest
+import os
+import sys
+
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+from src.selection_sort import selection_sort
 
 class TestSelectionSort(unittest.TestCase):
     def test_selection_sort(self):

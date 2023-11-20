@@ -1,5 +1,15 @@
-def set_min_val(a, k):
-    for i in range(len(a)):
-        if a[i] < k:
-            a[i] = k
-    return a
+def shell_sort(arr):
+    n = len(arr)
+    gap = n // 2  # Using integer division
+
+    while gap > 0:
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+            arr[j] = temp
+        gap //= 2  # Using integer division
+
+    return arr
