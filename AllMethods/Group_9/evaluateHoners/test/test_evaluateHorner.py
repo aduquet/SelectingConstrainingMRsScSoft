@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.evaluateHorner import evaluateHorner
 
 class TestEvaluateHorner(unittest.TestCase):
     def test_evaluate_horner(self):

@@ -6,8 +6,6 @@ sys.path.append(os.path.abspath('../src'))
 
 from src.clip import clip
 
-import unittest
-
 class TestClip(unittest.TestCase):
     def test_clip(self):
         self.assertEqual(clip([1, 2, 3, 4, 5], 2, 4), [2, 2, 3, 4, 4])

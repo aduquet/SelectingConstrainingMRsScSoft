@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.sampleWeightedVariance import sampleWeightedVariance
 
 class TestSampleWeightedVariance(unittest.TestCase):
     def test_sample_weighted_variance(self):

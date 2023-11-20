@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.sampleSkew import sampleSkew
 
 class TestSampleSkew(unittest.TestCase):
 

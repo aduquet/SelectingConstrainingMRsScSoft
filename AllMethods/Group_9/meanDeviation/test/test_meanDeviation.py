@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.meanDeviation import meanDeviation
 
 class TestMeanDeviation(unittest.TestCase):
     def test_mean_deviation(self):

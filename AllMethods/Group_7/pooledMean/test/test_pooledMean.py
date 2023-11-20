@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.pooledMean import pooledMean
 
 class TestPooledMean(unittest.TestCase):
     def test_pooled_mean(self):

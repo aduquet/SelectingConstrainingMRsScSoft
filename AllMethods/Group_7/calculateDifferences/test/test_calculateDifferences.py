@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.calculateDifferences import calculateDifferences
+
 
 # Test suite for the calculateDifferences function
 class TestCalculateDifferences(unittest.TestCase):

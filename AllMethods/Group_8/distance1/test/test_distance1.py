@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.distance1 import distance1
 
 class TestDistance1(unittest.TestCase):
     def test_manhattan_distance(self):

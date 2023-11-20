@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.polevl import polevl
 
 class TestPolevl(unittest.TestCase):
     def test_polevl(self):

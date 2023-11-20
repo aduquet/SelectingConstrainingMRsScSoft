@@ -1,6 +1,12 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
 
-import unittest
+from src.sampleKurtosis import sampleKurtosis
+
 
 class TestSampleKurtosis(unittest.TestCase):
 

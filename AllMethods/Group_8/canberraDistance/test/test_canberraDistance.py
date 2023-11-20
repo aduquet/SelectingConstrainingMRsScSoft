@@ -1,5 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
 
+from src.canberraDistance import canberraDistance
 class TestcanberraDistance(unittest.TestCase):
     def test_canberra_distance(self):
         self.assertAlmostEqual(canberraDistance([1.0, 2.0, 3.0], [4.0, 5.0, 6.0]), 1.0)  # Example value

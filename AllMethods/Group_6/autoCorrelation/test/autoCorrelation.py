@@ -1,6 +1,10 @@
-
-
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.autoCorrelation import autoCorrelation
 
 class TestAutoCorrelation(unittest.TestCase):
     def test_auto_correlation(self):

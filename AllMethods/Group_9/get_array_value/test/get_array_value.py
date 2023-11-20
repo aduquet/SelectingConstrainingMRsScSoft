@@ -1,4 +1,12 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.get_array_value import get_array_value
+
 
 class TestGetArrayValue(unittest.TestCase):
     def test_valid_index(self):

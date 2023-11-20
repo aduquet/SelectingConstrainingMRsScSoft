@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.find_diff import find_diff
 
 class TestFindDiff(unittest.TestCase):
     def test_find_diff(self):

@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.g import g
 
 class TestGFunction(unittest.TestCase):
     def test_g_function(self):

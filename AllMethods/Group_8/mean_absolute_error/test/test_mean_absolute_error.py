@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.mean_absolute_error import mean_absolute_error
 
 class TestMeanAbsoluteError(unittest.TestCase):
     def test_mean_absolute_error(self):

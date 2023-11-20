@@ -1,4 +1,12 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.evaluateInternal import evaluateInternal
+
 
 class TestEvaluateInternal(unittest.TestCase):
     def test_evaluate_internal(self):

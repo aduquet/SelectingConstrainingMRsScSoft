@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.power import power
+
 
 class TestPower(unittest.TestCase):
     def test_power(self):

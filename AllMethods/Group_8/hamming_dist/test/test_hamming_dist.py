@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.hamming_dist import hamming_dist
 
 class TestHammingDist(unittest.TestCase):
     def test_hamming_dist(self):

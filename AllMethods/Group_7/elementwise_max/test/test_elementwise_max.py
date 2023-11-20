@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.elementwise_max import elementwise_max
 
 class TestElementwiseMax(unittest.TestCase):
     def test_elementwise_max(self):

@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.elementwise_min import elementwise_min
+
 
 class TestElementwiseMin(unittest.TestCase):
     def test_elementwise_min(self):

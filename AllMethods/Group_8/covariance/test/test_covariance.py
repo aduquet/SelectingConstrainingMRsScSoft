@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.covariance import covariance
 
 class TestCovariance(unittest.TestCase):
     def test_covariance(self):

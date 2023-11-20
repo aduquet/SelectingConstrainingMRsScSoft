@@ -1,16 +1,29 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
 
-class TestEbeAdd(unittest.TestCase):
-    def test_ebe_add(self):
-        self.assertEqual(ebeAdd([1, 2, 3], [4, 5, 6]), [5, 7, 9])
+from src.elementwise_not_equal import elementwise_not_equal
 
-    def test_invalid_input_type(self):
-        with self.assertRaises(TypeError):
-            ebeAdd("not a list", [1, 2, 3])
 
-    def test_mismatched_lengths(self):
+class TestElementwiseNotEqual(unittest.TestCase):
+    
+    def test_equal_lists(self):
+        self.assertEqual(elementwise_not_equal([1, 2, 3], [1, 2, 3]), [False, False, False])
+
+    def test_different_lists(self):
+        self.assertEqual(elementwise_not_equal([1, 2, 3], [4, 5, 6]), [True, True, True])
+
+    def test_partially_different_lists(self):
+        self.assertEqual(elementwise_not_equal([1, 2, 3], [1, 2, 4]), [False, False, True])
+
+    def test_mismatched_length_lists(self):
         with self.assertRaises(ValueError):
-            ebeAdd([1, 2], [1, 2, 3])
+            elementwise_not_equal([1, 2, 3], [1, 2])
 
-if __name__ == "__main__":
+    def test_empty_lists(self):
+        self.assertEqual(elementwise_not_equal([], []), [])
+
+if __name__ == '__main__':
     unittest.main()

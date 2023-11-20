@@ -1,52 +1,46 @@
----------------------------------------------------------------
-    errorRate Function
----------------------------------------------------------------
 
-Overview:
----------
-- Calculates the error rate based on provided labels and predictions.
+### README for `find_euc_dist` Function
 
-Requirements:
--------------
-- Python 3.x
+#### Overview
 
-Parameters:
------------
-- labels (list or tuple): The list of actual labels.
-- predictions (list or tuple): The list of predicted labels.
+The `find_euc_dist` function calculates the Euclidean distance between two points in n-dimensional space, where the points are represented as lists of coordinates.
 
-Returns:
---------
-- float: The error rate calculated as the number of mismatches divided by the number of comparisons.
-- Raises TypeError for non-list/tuple inputs.
-- Raises ValueError for lists of different lengths or all invalid predictions.
+#### Function Signature
 
-Functionality:
---------------
-- Input Validation: Ensures both labels and predictions are lists or tuples of the same length.
-- Error Rate Calculation: Compares labels and predictions to calculate the error rate.
+```python
+def find_euc_dist(a, b):
+    # function implementation
+```
 
-Example Usage:
---------------
-> labels = [1, 2, 3, 4]
-> predictions = [1, 2, 4, 3]
-> result = errorRate(labels, predictions)
-> print(result)  # Output: 0.5
+#### Parameters
 
-Error Handling:
----------------
-- TypeError: Raised for non-list/tuple inputs.
-- ValueError: Raised for lists of different lengths or all invalid predictions.
+- `a` (list): The first point in n-dimensional space.
+- `b` (list): The second point in n-dimensional space.
 
-Test Suite:
------------
-- Tests include error rate calculation, all invalid predictions, mismatched list lengths, and invalid input types.
-- Validates the function's correctness and error handling.
+#### Returns
 
-Running Tests:
---------------
-- Use the unittest framework in Python.
-- Combine the function and test suite in one script.
-- Run the script to execute tests and view results.
+- `float`: The Euclidean distance between `a` and `b`.
 
----------------------------------------------------------------
+#### Process
+
+1. Validates that `a` and `b` have the same length.
+2. Calculates the sum of squared differences between corresponding elements of `a` and `b`.
+3. Returns the square root of this sum.
+
+#### Test Suite
+
+A test suite for this function includes tests for valid distances, zero distance, and mismatched list lengths.
+
+#### Example Usage
+
+```python
+distance = find_euc_dist([1, 2, 3], [4, 5, 6])
+# distance will be approximately 5.196
+```
+
+This example calculates the Euclidean distance between two points in a 3-dimensional space.
+
+#### Notes
+
+- The function expects `a` and `b` to be of the same length and contain numeric values.
+- The Euclidean distance is the "ordinary" distance between two points, which can be visualized as the length of a straight line connecting them.

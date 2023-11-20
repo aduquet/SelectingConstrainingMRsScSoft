@@ -1,4 +1,12 @@
 import unittest
+import sys
+import os
+import math
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.quantile import quantile
+
 
 class TestQuantile(unittest.TestCase):
     def test_quantile(self):

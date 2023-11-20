@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../src'))
+
+from src.meanDifference import meanDifference
 
 class TestMeanDifference(unittest.TestCase):
     def test_mean_difference(self):
