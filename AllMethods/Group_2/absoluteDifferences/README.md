@@ -1,45 +1,43 @@
----------------------------------------------------------------
-    absoluteDifferences Function
----------------------------------------------------------------
+### README for `add_values` Function
 
-Overview:
----------
-- Calculates the absolute values of elements in a list.
-- Handles mixed data types in the list.
+#### Overview
 
-Requirements:
--------------
-- Python 3.x
+The `add_values` function is a simple Python function designed to calculate the sum of a list of numerical values. It iterates through each element in the provided list and accumulates their total sum.
 
-Parameters:
------------
-- z (list): A list of numbers (integers or floats).
+#### Function Signature
 
-Returns:
---------
-- list: A new list with the absolute values of numeric elements in z.
-- Raises TypeError if the input is not a list.
+```python
+def add_values(data):
+    # function implementation
+```
 
-Functionality:
---------------
-- Type Checking: Verifies that input is a list.
-- Calculation: Converts each numeric element to its absolute value.
-- Non-Numeric Handling: Returns None for non-numeric elements.
+#### Parameters
 
-Example Usage:
---------------
-> data = [-3, 4, 'a', 0]
-> result = absoluteDifferences(data)
-> print(result)  # Output: [3, 4, None, 0]
+- `data` (list): A list of numerical values to be summed up.
 
-Test Suite:
------------
-- Includes tests for mixed data, empty list, non-list input, and all positive values.
+#### Returns
 
-Running Tests:
---------------
-- Use the unittest framework in Python.
-- Combine the function and test suite in one script.
-- Run the script to execute tests and view results.
+- `int` or `float`: The total sum of the elements in `data`.
 
----------------------------------------------------------------
+#### Process
+
+1. Initializes a variable `total` to 0.
+2. Iterates through each element in the `data` list.
+3. Adds each element's value to `total`.
+4. Returns the final value of `total` after all elements have been processed.
+
+#### Example Usage
+
+```python
+numbers = [10, 20, 30, 40]
+sum_of_numbers = add_values(numbers)
+```
+
+In this example, the function will return the sum of the numbers in the list `[10, 20, 30, 40]`, which is `100`.
+
+#### Notes
+
+- The function expects `data` to be a list of numbers (integers or floats).
+- It can handle any size of the list, including an empty list, in which case it returns `0`.
+- The function does not handle non-numeric types and will raise an error if `data` contains non-numeric elements.
+

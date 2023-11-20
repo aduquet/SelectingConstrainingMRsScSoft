@@ -1,7 +1,7 @@
-import json
 import os
+import json
 from parser.mr_analysis_parser import FileParser
-
+from save_files import SaveFiles
 
 if __name__ == '__main__':
   
@@ -16,8 +16,9 @@ if __name__ == '__main__':
     with open(root_file_path) as f:
       data = json.load(f)
     
-    FileParser(root_file_path).get_td()
+    data_procesed = FileParser(data=data).get_td()
     
+    SaveFiles(data=data_procesed, file_name='hale').saveJSON()
     # print(data)
     
 main()
