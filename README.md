@@ -1,1 +1,1 @@
-# AST2024-SelectingConstrainingMRsScSoft
+# SelectingConstrainingMRsScSoft
