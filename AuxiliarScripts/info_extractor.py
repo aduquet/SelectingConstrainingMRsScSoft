@@ -7,8 +7,6 @@ import time
 import json
 import os
 
-
-
 def create_empty_py_file(filename):
     # Check if the filename has a .py extension, if not, append it
     if not filename.endswith('.py'):
@@ -73,7 +71,5 @@ if __name__ == '__main__':
 
         save_csv(df, output, mainPath)
         save_json(df, output, mainPath)
-
-
 
 main()

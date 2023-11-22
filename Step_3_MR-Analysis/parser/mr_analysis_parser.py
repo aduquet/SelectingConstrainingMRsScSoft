@@ -23,7 +23,6 @@ class FileParser():
             data_attribute = self.data.copy()
                         
             if len(td_list) != 0:
-                print('***** \n\n\n', len(td_list) )
                 
                 data_attribute[str(i)]['size'] = descripter.get_length()
                 data_attribute[str(i)]['has_zero'] = descripter.has_zero()
