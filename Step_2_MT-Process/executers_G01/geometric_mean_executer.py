@@ -20,7 +20,7 @@ if not all_methods_path.is_dir():
 # Add the parent directory of AllMethods to the Python path
 sys.path.append(str(all_methods_path.parent))
 
-from AllMethods.Group_1.geometric_mean.src.geometric_mean import geometric_mean
+from AllMethods.Group_01.geometric_mean.src.geometric_mean import geometric_mean
 
 
 def _get_ttd(input):

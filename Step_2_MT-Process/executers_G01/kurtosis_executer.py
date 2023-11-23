@@ -20,7 +20,7 @@ if not all_methods_path.is_dir():
 # Add the parent directory of AllMethods to the Python path
 sys.path.append(str(all_methods_path.parent))
 
-from AllMethods.Group_1.kurtosis.src.kurtosis import kurtosis
+from AllMethods.Group_01.kurtosis.src.kurtosis import kurtosis
 
 
 def _get_ttd(input):

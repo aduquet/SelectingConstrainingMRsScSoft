@@ -20,7 +20,7 @@ if not all_methods_path.is_dir():
 # Add the parent directory of AllMethods to the Python path
 sys.path.append(str(all_methods_path.parent))
 
-from AllMethods.Group_1.cnt_non_zeros.src.cnt_non_zeros import cnt_non_zeros
+from AllMethods.Group_01.cnt_non_zeros.src.cnt_non_zeros import cnt_non_zeros
 
 
 def _get_ttd(input):
