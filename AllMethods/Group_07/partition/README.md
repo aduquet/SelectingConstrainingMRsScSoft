@@ -1,27 +1,26 @@
-# autoCorrelation Function
 
-The `autoCorrelation` function calculates the autocorrelation of a given data series with a specified lag, mean, and variance. Autocorrelation measures the similarity between a data point and a data point at a certain time lag.
+# Partition Function
 
-## Function Implementation
+## Overview
+The `partition` function is a utility used for sorting and organizing elements within a list. It implements a crucial step in the QuickSort algorithm by rearranging elements in a list based on a pivot element. Elements smaller than the pivot are moved to its left, and those larger are moved to its right. This function is an essential building block for efficient sorting algorithms.
 
-The function computes autocorrelation using the formula:
+## Function Details
+- **Function Name**: `partition`
+- **Parameters**:
+  - `work`: The list of elements to be partitioned.
+  - `begin`: The starting index of the segment of the list to be partitioned.
+  - `end`: The ending index (exclusive) of the segment of the list to be partitioned.
+  - `pivot`: The index of the pivot element.
+- **Returns**: The final index position of the pivot element after partitioning.
 
-`ACF(lag) = Σ[(X(t) - mean) * (X(t - lag) - mean)] / [(N - lag) * variance]`
+## Usage
+To use the `partition` function, you need to provide a list (`work`) and specify the segment of the list to be partitioned by providing `begin`, `end`, and `pivot` indices.
 
-
-Where:
-- `data` is the input data series.
-- `lag` is the time lag for which autocorrelation is computed.
-- `mean` is the mean of the data series.
-- `variance` is the variance of the data series.
-
-## Test Suite
-
-A test suite using the `unittest` framework is provided to verify the correctness of the `autoCorrelation` function. The test case `test_auto_correlation` checks if the function correctly calculates the autocorrelation for a sample data series.
-
-## Running the Tests
-
-To run the tests, execute the following command:
-
-```bash
-python test_auto_correlation.py
+Example:
+```python
+work_list = [12, 7, 14, 9, 10, 11]
+pivot_index = 3  # Choosing an index as pivot
+final_pivot_position = partition(work_list, 0, len(work_list), pivot_index)
+print("Final Pivot Position:", final_pivot_position)
+print("Partitioned List:", work_list)
+```
