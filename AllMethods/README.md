@@ -36,7 +36,7 @@ Below is the detailed information for each group within `AllMethods`, outlining 
 - **Number of Inputs**: 2
 - **Input Type**: List and Numerical (integer or float)
 - **Number of Outputs**: 1
-- **Output Type**: List
+- **Output Type**: List and Numerical (integer or float)
 
 ### Group 06
 - **Number of Inputs**: 2
@@ -101,7 +101,7 @@ Below is the detailed information for each group within `AllMethods`, outlining 
 | Group_02 | 24                  | **Number of Inputs**: 2<br>**Input Type**: List<br>**Number of Outputs**: 1<br>**Output Type**: Numerical (integer or float) |
 | Group_03 | 14                  | **Number of Inputs**: 2<br>**Input Type**: List<br>**Number of Outputs**: 1<br>**Output Type**: List |
 | Group_04 | 8                   | **Number of Inputs**: 1<br>**Input Type**: List<br>**Number of Outputs**: 1<br>**Output Type**: List |
-| Group_05 | 8                   | **Number of Inputs**: 2<br>**Input Type**: List and Numerical (integer or float)<br>**Number of Outputs**: 1<br>**Output Type**: List |
+| Group_05 | 8                   | **Number of Inputs**: 2<br>**Input Type**: List and Numerical (integer or float)<br>**Number of Outputs**: 1<br>**Output Type**: Numerical (integer or float) |
 | Group_06 | 5                   | **Number of Inputs**: 2<br>**Input Type**: List and Numerical (integer or float)<br>**Number of Outputs**: 1<br>**Output Type**: List |
 | Group_07 | 5                   | Special case with multiple function types (autoCorrelation, partition, biSearchFromTo, clip, evaluateWeightedProduct) |
 | Group_08 | 4                   | Includes functions with Boolean outputs, both with single and dual list inputs |
