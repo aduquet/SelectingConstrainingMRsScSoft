@@ -77,7 +77,7 @@ Below is the detailed information for each group within `AllMethods`, outlining 
 - **Number of Inputs**: 3
 - **Input Type**: List, 2 Numerical (integer or float)
 - **Number of Outputs**: 1
-- **Output Type**: 2 Numerical (integer or float)
+- **Output Type**: Numerical (integer or float)
 
 ### Group 10
 - **Number of Inputs**: 3
@@ -119,6 +119,3 @@ Example:
 from Group_01 import function_name
 result = function_name([input_list])
 ```
-
-Certainly! Here's the updated README with the addition of the `groupID` information, which indicates the number of functions in each group:
-
