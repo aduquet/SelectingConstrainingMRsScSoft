@@ -25,7 +25,7 @@ from AllMethods.Group_01.add_values.src.add_values import add_values
 
 def _get_ttd(input):
     
-    return AdapterInputs(input).ttd_all_mrs(2)
+    return AdapterInputs(test_data_one_input = input).ttd_all_mrs(const=2)
 
 def _get_outputs(all_inputs):
     error_message = None
@@ -116,7 +116,7 @@ if __name__ == '__main__':
             json.dumps(inputs, indent=4)
             
         for i in range(0, len(inputs)):
-            test_data = inputs[str(i)]['test_data']            
+            test_data = inputs[str(i)]['td']            
             td_ttd = _get_ttd(test_data)
             input_outputs = _get_outputs(td_ttd)
             checkers = mr_checker(input_outputs)

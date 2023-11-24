@@ -12,20 +12,23 @@ class MR_ADD():
     td_output = None
     ttd_output = None
     
-    def __init__(self, test_data_one_input, cons):
-        self.test_data_one_input = test_data_one_input
+    def __init__(self, td, cons):
+        self.td = td
         self.cons = cons
     
     # MR_ADD -> Add a positive constant
     def followUpTD(self):
         aux_list = []
         
-        if len(self.test_data_one_input) != 0 and type(self.test_data_one_input) == list:    
-            for item in self.test_data_one_input:
+        if len(self.td) != 0 and type(self.td) == list:    
+            for item in self.td:
                 aux_list.append(item + self.cons)
         
-        return aux_list
-    
+            return aux_list
+        
+        else:
+            return self.td + self.cons
+            
     def mrChecker(self, outputTD, outputTTD):
         error_message = None
         
@@ -54,7 +57,7 @@ class MR_ADD():
     def mrCheckerResult(self):
         
         return {
-            'td' : self.test_data_one_input,
+            'td' : self.td,
             'ttd': self.ttd,
             'td_output': self.td_output,
             'ttd_output': self.ttd_output,

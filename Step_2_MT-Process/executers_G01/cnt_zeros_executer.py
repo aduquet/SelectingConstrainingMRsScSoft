@@ -6,8 +6,8 @@ import json
 import sys
 import os
 
-all_methods_path = Path(__file__).parent / '/Users/alduck/Documents/GitHub/AST2024-SelectingConstrainingMRsScSoft/AllMethods'
 
+all_methods_path = Path(__file__).parent / '/Users/alduck/Documents/GitHub/SelectingConstrainingMRsScSoft/AllMethods'
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('../executers'))
 from adapters.adapter_inputs import AdapterInputs
