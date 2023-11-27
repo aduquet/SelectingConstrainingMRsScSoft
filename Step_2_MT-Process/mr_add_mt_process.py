@@ -24,10 +24,7 @@ class MR_ADD():
             for item in self.td:
                 aux_list.append(item + self.cons)
         
-            return aux_list
-        
-        else:
-            return self.td + self.cons
+        return aux_list
             
     def mrChecker(self, outputTD, outputTTD):
         error_message = None
