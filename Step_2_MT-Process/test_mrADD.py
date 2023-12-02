@@ -19,8 +19,12 @@ class TestMR_ADD(unittest.TestCase):
         # Test the followUP method
         mr_add = MR_ADD(6, 6, [1, 3], [4], 1, 2, 3, [])
         result = mr_add.followUP(2)
-        expectedKeys = ['td_1', 'td_2', 'td_3', 'td_4', 'td_5', 'td_6', 'td_7', 'td_8', 
-                        'ttd_1', 'ttd_2', 'ttd_3', 'ttd_4', 'ttd_5', 'ttd_6', 'ttd_7', 'ttd_8']
+        expectedKeys = ['td_1_mr_add', 'td_2_mr_add', 'td_3_mr_add', 
+                        'td_4_mr_add', 'td_5_mr_add', 'td_6_mr_add', 
+                        'td_7_mr_add', 'td_8_mr_add', 
+                        'ttd_1_mr_add', 'ttd_2_mr_add', 'ttd_3_mr_add', 
+                        'ttd_4_mr_add', 'ttd_5_mr_add', 'ttd_6_mr_add', 
+                        'ttd_7_mr_add', 'ttd_8_mr_add']
         keys = list(result.keys())
         
         self.assertEqual(expectedKeys, keys)
@@ -31,8 +35,12 @@ class TestMR_ADD(unittest.TestCase):
         results = mr_add.followUP(2)
 
         # Create the expected DataFrame
-        columns = ['td_1', 'td_2', 'td_3', 'td_4', 'td_5', 'td_6', 'td_7', 'td_8', 
-                        'ttd_1', 'ttd_2', 'ttd_3', 'ttd_4', 'ttd_5', 'ttd_6', 'ttd_7', 'ttd_8']
+        columns = ['td_1_mr_add', 'td_2_mr_add', 'td_3_mr_add', 
+                   'td_4_mr_add', 'td_5_mr_add', 'td_6_mr_add', 
+                   'td_7_mr_add', 'td_8_mr_add', 
+                    'ttd_1_mr_add', 'ttd_2_mr_add', 'ttd_3_mr_add',
+                    'ttd_4_mr_add', 'ttd_5_mr_add', 'ttd_6_mr_add',
+                    'ttd_7_mr_add', 'ttd_8_mr_add']
         row = [6, 6, [1, 3], [4], 1, 2, 3, [],
                8, 8, [3, 5], [6], 3, 4, 5, []]
         
