@@ -29,6 +29,9 @@ class MR_ADD:
         # Lists to store the results of _ttd for td and ttd
         self.ttd = []
         self.td = []
+        
+        self.vs = None
+        self.vs_string = None
 
     def followUP(self, const):
         # Method to perform follow-up calculations
@@ -39,8 +42,8 @@ class MR_ADD:
         # Iterate through the input arguments
         for i, arg in enumerate(self.tdArgs):
             # Generate column names for td and ttd
-            self.keyNames_td.append('td_' + str(i + 1))
-            self.keyNames_ttd.append('ttd_' + str(i + 1))
+            self.keyNames_td.append('td_' + str(i + 1) + '_mr_add')
+            self.keyNames_ttd.append('ttd_' + str(i + 1) + '_mr_add')
             
             # Calculate and store the result of _ttd for td
             self.ttd.append(_ttd(td=arg, const=self.const))
@@ -64,3 +67,45 @@ class MR_ADD:
         result = pd.concat([self.df, df_aux], axis=1)
 
         return result
+    
+    def mrChecker(self, td_output, ttd_output):
+        
+        error_message = None
+        
+        try:
+            if isinstance(td_output, list) and isinstance(ttd_output, list):
+                #TODO: check element by element comparison 
+                pass   
+            
+            else:
+                if math.isclose(td_output, ttd_output, rel_tol= 1e-9) or td_output < ttd_output:
+                    self.vs = 0
+                    self.vs_string = 'no-violated'
+                    
+                else:
+                    self.vs = 1
+                    self.vs_string = 'violated'
+                
+                return self.mrCheckerResults()
+                
+        except (TypeError, ValueError, ZeroDivisionError):
+            error_message = traceback.format_exc()
+            
+            # TODO: check what exception type occured :) 
+            # TODO: save error message in txt with the td id
+            
+            self.vs = 'error'
+            self.vs_string = 'error'
+    
+    def mrCheckerResults(self):
+        return {
+            'vs_mr_add': self.vs,
+            'vs_mr_add': self.vs_string
+        }
+# Example Usage
+td_list = [[1, 2, 3], [1, 2, 3], [1, 2, 3], 3,4,5]
+td_list = [1, 2, 3]
+
+cons = 2
+mr_add = MR_ADD(td_list)
+print(mr_add.followUP(cons))
