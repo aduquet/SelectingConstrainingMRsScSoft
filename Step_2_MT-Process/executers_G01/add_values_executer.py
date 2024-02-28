@@ -22,7 +22,6 @@ sys.path.append(str(all_methods_path.parent))
 
 from AllMethods.Group_01.add_values.src.add_values import add_values
 
-
 def _get_ttd(input):
     
     return AdapterInputs(test_data_one_input = input).ttd_all_mrs(const=2)

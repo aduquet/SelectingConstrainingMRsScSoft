@@ -9,7 +9,7 @@ class AdapterMRchecker():
     
     def __init__(self, inputs_outputs, const):
         self.inputs_outputs = inputs_outputs
-        self.test_data_one_input = inputs_outputs['td']
+        self.test_data_one_input = inputs_outputs['td_a']
         self.cons = const
 
     def _mr_per(self):
