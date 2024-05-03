@@ -56,10 +56,10 @@ class ListDescripter():
     def contains_integers(self):
         return all(isinstance(num, int) for num in self.data_list)
     
-    def pp_numbers(self):
+    def pp_numbers(self): # Percentage of positive numbers among all numbers
         return sum(num for num in self.data_list if num > 0) / len(self.data_list)
 
-    def pn_numbers(self):
+    def pn_numbers(self): # Percentage of negative number among all number
         return sum(num for num in self.data_list if num < 0) / len(self.data_list)
 
         
