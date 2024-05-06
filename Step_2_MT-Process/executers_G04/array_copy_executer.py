@@ -11,7 +11,7 @@ all_methods_path = Path(__file__).parent / '/Users/alduck/Documents/GitHub/Selec
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('../executers'))
 from adapters.adapter_inputs import AdapterInputs
-from adapters.adapter_mr_checker import AdapterMRchecker
+from adapters.adapter_mr_checker_G01 import AdapterMRchecker
 
 # Making sure the directory exists
 if not all_methods_path.is_dir():
@@ -109,6 +109,7 @@ if __name__ == '__main__':
             os.mkdir(mainPathMRChecker)
         except:
             pass
+        
         
         with open(input_path, 'r') as readfiles:
             inputs = json.load(readfiles)
