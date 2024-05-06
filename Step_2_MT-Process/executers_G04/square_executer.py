@@ -11,7 +11,7 @@ all_methods_path = Path(__file__).parent / '/Users/alduck/Documents/GitHub/Selec
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('../executers'))
 from adapters.adapter_inputs import AdapterInputs
-from adapters.adapter_mr_checker import AdapterMRchecker
+from adapters.adapter_mr_checker_G01 import AdapterMRchecker
 
 # Making sure the directory exists
 if not all_methods_path.is_dir():
@@ -30,44 +30,43 @@ def _get_outputs(all_inputs):
     error_message = None
     
     inputs_outputs = all_inputs.copy()
-    
     try:
-        inputs_outputs['td_output'] = square(all_inputs['td_a'], all_inputs['td_b'] )
+        inputs_outputs['td_output'] = square(all_inputs['td'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['td_output'] = 'error'
     try:
-        inputs_outputs['ttd_output_mr_per'] = square(all_inputs['td_ttd_a_MR_PER'], all_inputs['td_ttd_b_MR_PER'])
+        inputs_outputs['ttd_output_mr_per'] = square(all_inputs['ttd_mr_per'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_per'] = 'error'
         
     try:
-        inputs_outputs['ttd_output_mr_add'] = square(all_inputs['td_ttd_a_MR_ADD'], all_inputs['td_ttd_b_MR_ADD'])
+        inputs_outputs['ttd_output_mr_add'] = square(all_inputs['ttd_mr_add'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_add'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_mul'] = square(all_inputs['td_ttd_a_MR_MUL'], all_inputs['td_ttd_b_MR_MUL'])
+        inputs_outputs['ttd_output_mr_mul'] = square(all_inputs['ttd_mr_mul'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_mul'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_inv'] = square(all_inputs['td_ttd_a_MR_INV'], all_inputs['td_ttd_b_MR_INV'])
+        inputs_outputs['ttd_output_mr_inv'] = square(all_inputs['ttd_mr_inv'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_inv'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_inc'] = square(all_inputs['td_ttd_a_MR_INC'], all_inputs['td_ttd_b_MR_INC'])
+        inputs_outputs['ttd_output_mr_inc'] = square(all_inputs['ttd_mr_inc'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_inc'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_exc'] = square(all_inputs['td_ttd_a_MR_EXC'], all_inputs['td_ttd_b_MR_EXC'])
+        inputs_outputs['ttd_output_mr_exc'] = square(all_inputs['ttd_mr_exc'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_exc'] = 'error'   
@@ -116,26 +115,9 @@ if __name__ == '__main__':
             json.dumps(inputs, indent=4)
             
         for i in range(0, len(inputs)):
-
-            all_inputs = {
-                'td_a' : inputs[str(i)]['td_a'],
-                'td_b' :inputs[str(i)]['td_b'],
-                'td_ttd_a_MR_ADD' :inputs[str(i)]['td_ttd_a_MR_ADD'],
-                'td_ttd_b_MR_ADD' : inputs[str(i)]['td_ttd_b_MR_ADD'],
-                'td_ttd_a_MR_EXC' :inputs[str(i)]['td_ttd_a_MR_EXC'],
-                'td_ttd_b_MR_EXC' : inputs[str(i)]['td_ttd_b_MR_EXC'],
-                'td_ttd_a_MR_INC' :inputs[str(i)]['td_ttd_a_MR_INC'],
-                'td_ttd_b_MR_INC' : inputs[str(i)]['td_ttd_b_MR_INC'],
-                'td_ttd_a_MR_INV' :inputs[str(i)]['td_ttd_a_MR_INV'],
-                'td_ttd_b_MR_INV' : inputs[str(i)]['td_ttd_b_MR_INV'],
-                'td_ttd_a_MR_MUL' :inputs[str(i)]['td_ttd_a_MR_MUL'],
-                'td_ttd_b_MR_MUL' : inputs[str(i)]['td_ttd_b_MR_MUL'],
-                'td_ttd_a_MR_PER' :inputs[str(i)]['td_ttd_a_MR_PER'],
-                'td_ttd_b_MR_PER' : inputs[str(i)]['td_ttd_b_MR_PER']
-            }            
-
-            input_outputs = _get_outputs(all_inputs)
-            # ttd_outputs = _get_outputs(ttd_a, ttd_b)
+            test_data = inputs[str(i)]['td']            
+            td_ttd = _get_ttd(test_data)
+            input_outputs = _get_outputs(td_ttd)
             checkers = mr_checker(input_outputs)
             
             auxList.append(checkers)
