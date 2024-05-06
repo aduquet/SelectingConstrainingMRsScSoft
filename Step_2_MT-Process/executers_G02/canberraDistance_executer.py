@@ -30,7 +30,6 @@ def _get_outputs(all_inputs):
     error_message = None
     
     inputs_outputs = all_inputs.copy()
-    print(all_inputs)
     
     try:
         inputs_outputs['td_output'] = canberraDistance(all_inputs['td_a'], all_inputs['td_b'] )

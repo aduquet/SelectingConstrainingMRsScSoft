@@ -20,7 +20,7 @@ if not all_methods_path.is_dir():
 # Add the parent directory of AllMethods to the Python path
 sys.path.append(str(all_methods_path.parent))
 
-from AllMethods.Group_02.sampleWeightefVariance.src.sampleWeightefVariance import sampleWeightefVariance
+from AllMethods.Group_02.sampleWeightedVariance.src.sampleWeightedVariance import sampleWeightedVariance
 
 def _get_ttd(input):
     
@@ -30,43 +30,44 @@ def _get_outputs(all_inputs):
     error_message = None
     
     inputs_outputs = all_inputs.copy()
+    
     try:
-        inputs_outputs['td_output'] = sampleWeightefVariance(all_inputs['td'])
+        inputs_outputs['td_output'] = sampleWeightedVariance(all_inputs['td_a'], all_inputs['td_b'] )
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['td_output'] = 'error'
     try:
-        inputs_outputs['ttd_output_mr_per'] = sampleWeightefVariance(all_inputs['ttd_mr_per'])
+        inputs_outputs['ttd_output_mr_per'] = sampleWeightedVariance(all_inputs['td_ttd_a_MR_PER'], all_inputs['td_ttd_b_MR_PER'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_per'] = 'error'
         
     try:
-        inputs_outputs['ttd_output_mr_add'] = sampleWeightefVariance(all_inputs['ttd_mr_add'])
+        inputs_outputs['ttd_output_mr_add'] = sampleWeightedVariance(all_inputs['td_ttd_a_MR_ADD'], all_inputs['td_ttd_b_MR_ADD'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_add'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_mul'] = sampleWeightefVariance(all_inputs['ttd_mr_mul'])
+        inputs_outputs['ttd_output_mr_mul'] = sampleWeightedVariance(all_inputs['td_ttd_a_MR_MUL'], all_inputs['td_ttd_b_MR_MUL'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_mul'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_inv'] = sampleWeightefVariance(all_inputs['ttd_mr_inv'])
+        inputs_outputs['ttd_output_mr_inv'] = sampleWeightedVariance(all_inputs['td_ttd_a_MR_INV'], all_inputs['td_ttd_b_MR_INV'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_inv'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_inc'] = sampleWeightefVariance(all_inputs['ttd_mr_inc'])
+        inputs_outputs['ttd_output_mr_inc'] = sampleWeightedVariance(all_inputs['td_ttd_a_MR_INC'], all_inputs['td_ttd_b_MR_INC'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_inc'] = 'error'
     
     try:
-        inputs_outputs['ttd_output_mr_exc'] = sampleWeightefVariance(all_inputs['ttd_mr_exc'])
+        inputs_outputs['ttd_output_mr_exc'] = sampleWeightedVariance(all_inputs['td_ttd_a_MR_EXC'], all_inputs['td_ttd_b_MR_EXC'])
     except (TypeError, ValueError, ZeroDivisionError):
         error_message = traceback.format_exc()
         inputs_outputs['ttd_output_mr_exc'] = 'error'   
@@ -115,9 +116,26 @@ if __name__ == '__main__':
             json.dumps(inputs, indent=4)
             
         for i in range(0, len(inputs)):
-            test_data = inputs[str(i)]['td']            
-            td_ttd = _get_ttd(test_data)
-            input_outputs = _get_outputs(td_ttd)
+
+            all_inputs = {
+                'td_a' : inputs[str(i)]['td_a'],
+                'td_b' :inputs[str(i)]['td_b'],
+                'td_ttd_a_MR_ADD' :inputs[str(i)]['td_ttd_a_MR_ADD'],
+                'td_ttd_b_MR_ADD' : inputs[str(i)]['td_ttd_b_MR_ADD'],
+                'td_ttd_a_MR_EXC' :inputs[str(i)]['td_ttd_a_MR_EXC'],
+                'td_ttd_b_MR_EXC' : inputs[str(i)]['td_ttd_b_MR_EXC'],
+                'td_ttd_a_MR_INC' :inputs[str(i)]['td_ttd_a_MR_INC'],
+                'td_ttd_b_MR_INC' : inputs[str(i)]['td_ttd_b_MR_INC'],
+                'td_ttd_a_MR_INV' :inputs[str(i)]['td_ttd_a_MR_INV'],
+                'td_ttd_b_MR_INV' : inputs[str(i)]['td_ttd_b_MR_INV'],
+                'td_ttd_a_MR_MUL' :inputs[str(i)]['td_ttd_a_MR_MUL'],
+                'td_ttd_b_MR_MUL' : inputs[str(i)]['td_ttd_b_MR_MUL'],
+                'td_ttd_a_MR_PER' :inputs[str(i)]['td_ttd_a_MR_PER'],
+                'td_ttd_b_MR_PER' : inputs[str(i)]['td_ttd_b_MR_PER']
+            }            
+
+            input_outputs = _get_outputs(all_inputs)
+            # ttd_outputs = _get_outputs(ttd_a, ttd_b)
             checkers = mr_checker(input_outputs)
             
             auxList.append(checkers)
