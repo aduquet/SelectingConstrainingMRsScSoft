@@ -62,8 +62,8 @@ def MR_INC(td_a, td_b, cons):
 
 def MR_INV(td_a, td_b):
     # MR_INV -> Take the inverse of each element
-    aux_list_a = td_a.copy()
-    aux_list_b = td_b.copy()
+    aux_list_a = []
+    aux_list_b = []
     
     if len(td_a) != 0 and type(td_a) == list and len(td_b) != 0 and type(td_b) == list:
         for item in td_a:
