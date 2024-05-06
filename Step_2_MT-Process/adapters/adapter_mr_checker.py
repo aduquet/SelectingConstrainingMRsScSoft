@@ -37,13 +37,14 @@ class AdapterMRchecker():
         return MR_EXC(self.test_data_one_input).mrChecker(self.inputs_outputs['td_output'], self.inputs_outputs['ttd_output_mr_exc'])
     
     def all_mrs_checker(self):
-
+        self.inputs_outputs['vs_str_mr_per'] = self._mr_per()['vs_str']
         self.inputs_outputs['vs_str_mr_add'] = self._mr_add()['vs_str']
         self.inputs_outputs['vs_str_mr_mul'] = self._mr_mul()['vs_str']
         self.inputs_outputs['vs_str_mr_inv'] = self._mr_inv()['vs_str']
         self.inputs_outputs['vs_str_mr_inc'] = self._mr_inc()['vs_str']
         self.inputs_outputs['vs_str_mr_exc'] = self._mr_exc()['vs_str']
-
+        
+        self.inputs_outputs['vs_mr_per'] = self._mr_per()['vs']
         self.inputs_outputs['vs_mr_add'] = self._mr_add()['vs']
         self.inputs_outputs['vs_mr_mul'] = self._mr_mul()['vs']
         self.inputs_outputs['vs_mr_inv'] = self._mr_inv()['vs']
