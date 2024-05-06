@@ -1,5 +1,6 @@
 import random
 import math
+import traceback
 
 class MR_PER():
     """ MR PER 
@@ -34,16 +35,23 @@ class MR_PER():
         self.ttd_output = outputTTD
         self.ttd = self.followUpTD()
         
-        if math.isclose(outputTD, outputTTD, rel_tol=1e-9, abs_tol=0):
-            self.vs = 0
-            self.vs_string = 'No-violate'
-        
-        else:
-            self.vs = 1
-            self.vs_string = 'Violate'
-            # return 1, 'Violated'
+        try:
+            if math.isclose(outputTD, outputTTD, rel_tol=1e-9, abs_tol=0):
+                self.vs = 0
+                self.vs_string = 'No-violate'
             
-        return self.mrCheckerResult()
+            else:
+                self.vs = 1
+                self.vs_string = 'Violate'
+                # return 1, 'Violated'
+                
+            return self.mrCheckerResult()
+        
+        except TypeError:
+            error_message = traceback.format_exc()
+            self.vs = 'error'
+            self.vs_string = 'error'
+            return self.mrCheckerResult()
     
     def mrCheckerResult(self):
         
