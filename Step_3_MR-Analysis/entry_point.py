@@ -11,9 +11,6 @@ def getname(fullpath):
 def is_json_file(filename):
     return filename.lower().endswith('.json')
 
-
-    
-      
 def process(tarjet_paths, output_path):
       
       mainDF = {}
