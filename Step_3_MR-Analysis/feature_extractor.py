@@ -1,7 +1,5 @@
 from additional_attributes_list.list_descripter import ListDescripter
 import pandas as pd
-import json
-
 
 class FeatureExtractor(object):
     def __init__(self, key: str, instance: dict):

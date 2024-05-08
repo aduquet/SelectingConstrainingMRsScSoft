@@ -1,6 +1,6 @@
-from AuxUtility import Utility
-from feature_extractor import FeatureExtractor
 from rule_mining_module import RuleMiningModule
+from feature_extractor import FeatureExtractor
+from AuxUtility import Utility
 import pandas as pd
 import glob as gl
 import pathlib

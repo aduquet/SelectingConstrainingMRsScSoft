@@ -1,13 +1,6 @@
-import os
-import pathlib
-import pandas as pd
-import numpy as np
-import glob as gl
-import warnings
-import pickle
 from mlxtend.frequent_patterns import apriori, association_rules
 from itertools import combinations
-
+import pandas as pd
 
 class RuleMiningModule(object):
     
