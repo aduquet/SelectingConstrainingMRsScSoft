@@ -1,0 +1,139 @@
+antecedents,consequents,antecedent support,consequent support,support,confidence,lift,leverage,conviction,zhangs_metric
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})",frozenset({'has_zeros'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'weigth_of_list_we'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'has_zeros'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'is_sorted', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})",frozenset({'is_sorted'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'is_sorted', 'weigth_of_list_we'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'is_sorted'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})",frozenset({'more_positive_or_negative_e'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})","frozenset({'has_zeros', 'is_sorted'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'has_zeros', 'is_sorted'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})","frozenset({'has_zeros', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'has_zeros', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})","frozenset({'is_sorted', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'is_sorted', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})","frozenset({'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'has_zeros', 'is_sorted'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),"frozenset({'weigth_of_list_we', 'isEmpty'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),frozenset({'has_zeros'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),frozenset({'is_sorted'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'isEmpty'})",1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we'})",frozenset({'isEmpty'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),frozenset({'vs_str_error'}),1.0,1.0,1.0,1.0,1.0,0.0,inf,0.0
+frozenset({'vs_str_error'}),frozenset({'weigth_of_list_we'}),1.0,1.0,1.0,1.0,1.0,0.0,inf,0.0
+frozenset({'vs_str_error'}),frozenset({'more_positive_or_negative_e'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),frozenset({'isEmpty'}),1.0,0.5,0.5,0.5,1.0,0.0,1.0,0.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we'})",frozenset({'more_positive_or_negative_e'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros'})","frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'has_zeros'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'has_zeros', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'is_sorted'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we'})",frozenset({'is_sorted'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we'})",frozenset({'has_zeros'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'has_zeros'})","frozenset({'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted'})","frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'has_zeros'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'has_zeros'}),frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we'})",frozenset({'more_positive_or_negative_e'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'is_sorted', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'has_zeros'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we'})","frozenset({'has_zeros', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros'})","frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted'})","frozenset({'vs_str_error', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'is_sorted', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'has_zeros', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'isEmpty'}),frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'is_sorted', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'has_zeros', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'has_zeros', 'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we'})","frozenset({'is_sorted', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'is_sorted'})","frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'is_sorted', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'has_zeros', 'is_sorted', 'weigth_of_list_we'})",frozenset({'more_positive_or_negative_e'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'more_positive_or_negative_e'})","frozenset({'is_sorted', 'weigth_of_list_we'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'has_zeros', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros'})",frozenset({'more_positive_or_negative_e'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_we', 'isEmpty'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'has_zeros'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'isEmpty'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'weigth_of_list_we'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_e'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'isEmpty'}),"frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'has_zeros'})",frozenset({'is_sorted'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'has_zeros'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'has_zeros'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'has_zeros'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'is_sorted'})",frozenset({'more_positive_or_negative_e'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'has_zeros', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'has_zeros'})","frozenset({'is_sorted', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'is_sorted'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'more_positive_or_negative_e'}),frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'is_sorted'})",0.5,0.5,0.5,1.0,2.0,0.25,inf,1.0
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'is_sorted', 'weigth_of_list_we'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'is_sorted'}),frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'weigth_of_list_we'})",0.5,1.0,0.5,1.0,1.0,0.0,inf,0.0

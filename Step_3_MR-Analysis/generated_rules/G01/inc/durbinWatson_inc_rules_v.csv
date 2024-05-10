@@ -1,0 +1,2 @@
+antecedents,consequents,antecedent support,consequent support,support,confidence,lift,leverage,conviction,zhangs_metric
+['more_positive_or_negative_p'],['vs_str_Violate'],0.3142857142857143,0.45714285714285713,0.15714285714285714,0.5,1.09375,0.013469387755102036,1.0857142857142859,0.12499999999999996
