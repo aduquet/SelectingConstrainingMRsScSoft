@@ -1,0 +1,154 @@
+antecedents,consequents,antecedent support,consequent support,support,confidence,lift,leverage,conviction,zhangs_metric
+frozenset({'vs_str_error'}),frozenset({'is_sorted'}),1.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,1.0,0.0,1.0,0.0
+frozenset({'vs_str_error'}),frozenset({'weigth_of_list_we'}),1.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,1.0,0.0,1.0,0.0
+frozenset({'weigth_of_list_we'}),"frozenset({'has_zeros', 'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),"frozenset({'has_zeros', 'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_e'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error'})","frozenset({'is_sorted', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'more_positive_or_negative_n', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),"frozenset({'has_zeros', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),"frozenset({'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'weigth_of_list_wn', 'more_positive_or_negative_n'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'weigth_of_list_wn', 'more_positive_or_negative_n', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'has_zeros', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'has_zeros'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_n'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error'})","frozenset({'has_zeros', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'has_zeros', 'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'weigth_of_list_we'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error'})","frozenset({'has_zeros', 'is_sorted'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),"frozenset({'has_zeros', 'vs_str_error', 'is_sorted'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'weigth_of_list_we'}),0.6666666666666666,0.6666666666666666,0.3333333333333333,0.5,0.75,-0.1111111111111111,0.6666666666666667,-0.5
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error'})",frozenset({'more_positive_or_negative_e'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'weigth_of_list_wn', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})",frozenset({'weigth_of_list_wn'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),"frozenset({'vs_str_error', 'is_sorted'})",0.6666666666666666,0.6666666666666666,0.3333333333333333,0.5,0.75,-0.1111111111111111,0.6666666666666667,-0.5
+frozenset({'is_sorted'}),"frozenset({'weigth_of_list_we', 'vs_str_error'})",0.6666666666666666,0.6666666666666666,0.3333333333333333,0.5,0.75,-0.1111111111111111,0.6666666666666667,-0.5
+"frozenset({'weigth_of_list_we', 'vs_str_error'})",frozenset({'is_sorted'}),0.6666666666666666,0.6666666666666666,0.3333333333333333,0.5,0.75,-0.1111111111111111,0.6666666666666667,-0.5
+"frozenset({'weigth_of_list_we', 'vs_str_error'})",frozenset({'has_zeros'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error'})","frozenset({'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),frozenset({'vs_str_error'}),0.6666666666666666,1.0,0.6666666666666666,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_we', 'vs_str_error'})",frozenset({'isEmpty'}),0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+"frozenset({'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'weigth_of_list_we'}),"frozenset({'isEmpty', 'vs_str_error'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",0.6666666666666666,0.3333333333333333,0.3333333333333333,0.5,1.5,0.1111111111111111,1.3333333333333335,0.9999999999999999
+frozenset({'is_sorted'}),frozenset({'vs_str_error'}),0.6666666666666666,1.0,0.6666666666666666,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'vs_str_error'})","frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})","frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'is_sorted'})","frozenset({'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error'})",frozenset({'more_positive_or_negative_e'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'vs_str_error'})","frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'has_zeros'}),"frozenset({'weigth_of_list_we', 'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'has_zeros'}),"frozenset({'more_positive_or_negative_e', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_e'}),"frozenset({'has_zeros', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_e'}),"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'vs_str_error', 'is_sorted'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",frozenset({'has_zeros'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'is_sorted'})","frozenset({'has_zeros', 'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'is_sorted'})","frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'weigth_of_list_we'})","frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'vs_str_error'})","frozenset({'weigth_of_list_we', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'is_sorted'})","frozenset({'has_zeros', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we'})","frozenset({'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'has_zeros'}),"frozenset({'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'weigth_of_list_we'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'weigth_of_list_we', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'has_zeros'}),"frozenset({'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_wn', 'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_n'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'more_positive_or_negative_n', 'vs_str_error', 'is_sorted'})",frozenset({'weigth_of_list_wn'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_wn', 'more_positive_or_negative_n', 'vs_str_error'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_wn', 'is_sorted'})","frozenset({'more_positive_or_negative_n', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'more_positive_or_negative_n', 'is_sorted'})","frozenset({'weigth_of_list_wn', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'weigth_of_list_we', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_wn', 'more_positive_or_negative_n'})","frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_wn', 'vs_str_error'})","frozenset({'more_positive_or_negative_n', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'more_positive_or_negative_n', 'vs_str_error'})","frozenset({'weigth_of_list_wn', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'weigth_of_list_we'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'is_sorted', 'more_positive_or_negative_e'})","frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'weigth_of_list_wn'}),"frozenset({'more_positive_or_negative_n', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_n'}),"frozenset({'weigth_of_list_wn', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_e'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_wn', 'more_positive_or_negative_n', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'vs_str_error'})","frozenset({'more_positive_or_negative_e', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error'})","frozenset({'is_sorted', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})","frozenset({'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_e'}),"frozenset({'has_zeros', 'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'is_sorted', 'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'is_sorted', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_e'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})","frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'has_zeros', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})","frozenset({'weigth_of_list_we', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'vs_str_error', 'is_sorted'})","frozenset({'has_zeros', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we', 'is_sorted'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_we', 'is_sorted'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'vs_str_error', 'is_sorted'})","frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_e'}),"frozenset({'weigth_of_list_we', 'vs_str_error', 'is_sorted'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'more_positive_or_negative_e', 'is_sorted'})","frozenset({'has_zeros', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})","frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'is_sorted'})","frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'vs_str_error'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'vs_str_error'})",frozenset({'more_positive_or_negative_e'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'has_zeros'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'has_zeros'}),"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_e'}),"frozenset({'has_zeros', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'weigth_of_list_we'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+frozenset({'isEmpty'}),frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+frozenset({'has_zeros'}),frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+frozenset({'more_positive_or_negative_e'}),frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+frozenset({'more_positive_or_negative_n'}),frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+frozenset({'weigth_of_list_wn'}),frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'isEmpty', 'weigth_of_list_we'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'isEmpty', 'vs_str_error'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'isEmpty'}),"frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'has_zeros', 'vs_str_error'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'has_zeros'}),"frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'more_positive_or_negative_n', 'vs_str_error'})",frozenset({'weigth_of_list_wn'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'weigth_of_list_wn'}),"frozenset({'more_positive_or_negative_n', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_wn', 'more_positive_or_negative_n'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'more_positive_or_negative_e', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'has_zeros', 'vs_str_error', 'is_sorted'})",frozenset({'more_positive_or_negative_e'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'has_zeros', 'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'more_positive_or_negative_e', 'vs_str_error', 'is_sorted'})",frozenset({'has_zeros'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+"frozenset({'weigth_of_list_wn', 'vs_str_error'})",frozenset({'more_positive_or_negative_n'}),0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
+frozenset({'more_positive_or_negative_e'}),"frozenset({'weigth_of_list_we', 'vs_str_error'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'is_sorted', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'more_positive_or_negative_e'}),"frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'vs_str_error', 'more_positive_or_negative_e'})",frozenset({'weigth_of_list_we'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'more_positive_or_negative_n', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'more_positive_or_negative_n', 'vs_str_error'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'more_positive_or_negative_n'}),"frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_wn', 'is_sorted'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+"frozenset({'weigth_of_list_wn', 'vs_str_error'})",frozenset({'is_sorted'}),0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+frozenset({'weigth_of_list_wn'}),"frozenset({'vs_str_error', 'is_sorted'})",0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,1.5,0.1111111111111111,inf,0.49999999999999994
+"frozenset({'weigth_of_list_we', 'more_positive_or_negative_e'})",frozenset({'vs_str_error'}),0.3333333333333333,1.0,0.3333333333333333,1.0,1.0,0.0,inf,0.0
+frozenset({'more_positive_or_negative_n'}),"frozenset({'weigth_of_list_wn', 'vs_str_error'})",0.3333333333333333,0.3333333333333333,0.3333333333333333,1.0,3.0,0.2222222222222222,inf,0.9999999999999999
