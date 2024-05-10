@@ -7,7 +7,6 @@ import pathlib
 import json
 import os
 
-
 def process(tarjet_path, output_path):
     
     file_name = Utility.getName(tarjet_path)
@@ -36,9 +35,24 @@ def start_rule_mining(data, path_store):
     rm = RuleMiningModule(data=data, support=0.5, conf=1)
     df_encode = rm.enconde()
     df_unique_encode = df_encode.drop_duplicates()
+    
+    k = df_unique_encode.keys()    
+    # Filter columns containing '_NA' in their names
+    columns_to_drop = [col for col in df_unique_encode.columns if '_NA' in col]
 
-    rm.ruleGenerator_v(df_encode=df_unique_encode, path_store= path_store)
-    rm.ruleGenerator_nv(df_encode=df_unique_encode, path_store= path_store)
+    # Drop filtered columns
+    df_unique_encode = df_unique_encode.drop(columns=columns_to_drop)
+    
+    if 'vs_str_error' in k:
+        rm.ruleGenerator_e(df_encode=df_unique_encode, path_store=path_store)
+    
+    if 'vs_str_No-violate' in k:
+        rm.ruleGenerator_v(df_encode=df_unique_encode, path_store= path_store)
+    
+    if 'vs_str_Violate' in k:
+        rm.ruleGenerator_nv(df_encode=df_unique_encode, path_store= path_store)
+    
+        
 
 
 if __name__ == '__main__':
@@ -51,15 +65,16 @@ if __name__ == '__main__':
     @click.option('-g', '--group', 'group_number', help = 'this parameter is for our exp purpose')
     @click.option('-mr', '--mr', 'mr', help = 'this parameter is for our exp purpose')
 
-    
     def main(file_path, output_file, group_number, mr):
         
         root_path = str(pathlib.Path().absolute()) + '/feature_extractor_outputs'
         path_rules = str(pathlib.Path().absolute()) + '/generated_rules/G' + group_number + '/' + mr
+        
         try:
             os.makedirs(root_path)
         except:
             pass
+        
         try:
             os.makedirs(path_rules)
 
